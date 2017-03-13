@@ -199,7 +199,7 @@ define( [ "yasmf", "app/models/noteStorageSingleton", "text!html/noteListView.ht
               "TRASH": _y.T( "TRASH" ),
               "NAME": notes[ note ].name,
               "REPRESENTATION": notes[ note ].representation,
-			  "STATUS": notes[ note ].Status, // JTKITZ Status Property 3/10/2017
+			  "STATUS": notes[ note ]._status, // JTKITZ Status Property 3/10/2017
               "MODIFIED": _y.D( notes[ note ].modifiedDate, "D" ),
               "INFO": "" + _y.N( notes[ note ].formattedUnitValue )
             } );

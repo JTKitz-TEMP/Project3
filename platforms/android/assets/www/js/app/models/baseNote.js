@@ -127,14 +127,13 @@ define( [ "yasmf" ], function( _y ) {
 	
 	
 	/* JTKitz Status Defined 3/10/2017 */
-	self._status = "";
+	self._status = "new";
     self.getStatus = function() {
       return self._status;
     };
     self.setStatus = function( theStatus ) {
       self._status = theStatus;
-      self._modifiedDate = new Date();
-      self.notify( "statusChange" );
+      self.notify( "statusChanged" );
     };
     Object.defineProperty( self, "status", {
       get: self.getStatus,
